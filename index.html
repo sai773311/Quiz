@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="q.css">
+</head>
+<body>
+
+    <div class="quiz-container active">
+        <div class="title"> Quiz</div>
+        
+        <div class="option-title">Select Category</div>
+        <div class="category-options">
+            <button class="category-option active">Programming</button>
+            <button class="category-option">G.K</button>
+        </div>
+
+        <div class="option-title">No of Questions</div>
+        <div class="question-options">
+            <button class="question-count active">4</button>
+            <button class="question-count">5</button>
+            <button class="question-count">All</button>
+        </div>
+
+        <div class="option-title">Enter Your Name (Required)</div>
+        <input type="text" id="player-name" placeholder="Your Name" autocomplete="off">
+
+        <button class="start-quiz-button">Start Quiz</button>
+    </div>
+
+    <div class="quis-container">
+        <div class="quis-header">
+            <div class="quis-title">Quiz Application</div>
+            <div class="quis-timer">⏱ 30</div>
+        </div>
+        <div class="quis-containt">
+            <div class="question-text">Loading question...</div>
+            <ul class="answer-options">
+                </ul>
+        </div>
+        <div class="quis-footer">
+            <div class="question-status"></div>
+            <button class="arrow">Next</button>
+            <button class="restart-button" style="display: none;">Restart</button>
+        </div>
+    </div>
+
+    <script src="q.js" defer></script>
+</body>
+</html>
